@@ -1,6 +1,30 @@
 @media screen and (max-width:1290px) {
     header {
 
+        nav{
+
+            .menu{
+                .form_subscribe{
+                    display: block !important;
+                    padding: 15px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+
+                    &.open{
+                        position: absolute;
+                        right: 0;
+                        top: 80px;
+                    }
+                }
+                form{
+                    display: none;
+
+                    &.open{
+                        display: flex;
+                    }
+                }
+            }
+        }
         .header_browser{
             width: 60%;
         }
@@ -8,6 +32,33 @@
             max-width: 40%;
             margin-top: 40px;
         }
+
     
     }
+}
+@media screen and (max-width:1100px) {
+    $paddingBtn: 13px 32px;
+    .btn{
+        padding: $paddingBtn;
+    }
+    header{
+
+        .content{
+
+            .text{
+                margin: 0;
+                h1{
+                    font-size: 46px;
+                    line-height: 45px;
+                }
+                .btn{
+                    margin-top: 40px;
+                }
+            }
+        }
+    } 
+}
+@media screen and (max-width:860px) {
+
+
 }
